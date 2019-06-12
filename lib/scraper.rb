@@ -17,6 +17,10 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     page = Nokogiri::HTML(open(profile_url))
+<<<<<<< HEAD
+=======
+    binding.pry
+>>>>>>> 17ed120dba7136aaa89dade171978db687b29050
     profile = {
       profile_quote: page.css(".profile-quote").text,
       bio: page.css("p").text
